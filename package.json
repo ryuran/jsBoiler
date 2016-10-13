@@ -4,10 +4,11 @@
   "description": "Js module boilerPlate",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint",
+    "test": "npm run lint && npm run tape",
     "lint": "eslint ./",
     "build": "WEBPACK_ENV=build webpack",
-    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
+    "tape": "tape test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,6 @@
     "eslint": "^3.7.1",
     "eslint-loader": "^1.5.0",
     "webpack": "^1.13.2",
-    "yargs": "^6.0.0"
-  }
+    "yargs": "^6.0.0",
+    "tape": "^4.6.2"  }
 }
