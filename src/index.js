@@ -1,4 +1,7 @@
-export default class Library {
+/**
+ * Library class
+ */
+class Library {
   constructor() {
     this._name = 'Library';
   }
@@ -6,3 +9,5 @@ export default class Library {
     return this._name;
   }
 }
+
+export default Library;

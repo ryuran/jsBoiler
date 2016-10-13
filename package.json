@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run tape",
-    "lint": "eslint ./",
-    "build": "WEBPACK_ENV=build webpack",
+    "lint": "eslint ./src/",
+    "dist": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "tape": "tape test/**/*.js"
+    "tape": "tape test/**/*.js",
+    "doc": "rm -rf docs/* && jsdoc src -d ./docs -R README.md",
+    "build": "npm run dist && npm run doc"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,7 @@
     "eslint-loader": "^1.5.0",
     "webpack": "^1.13.2",
     "yargs": "^6.0.0",
-    "tape": "^4.6.2"  }
+    "tape": "^4.6.2",
+    "jsdoc": "^3.4.2"
+  }
 }
