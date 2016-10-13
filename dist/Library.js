@@ -54,7 +54,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports) {
 
-	export default class Library {
+	/**
+	 * Library class
+	 */
+	class Library {
 	  constructor() {
 	    this._name = 'Library';
 	  }
@@ -62,6 +65,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return this._name;
 	  }
 	}
+	
+	export default Library;
 
 /***/ }
 /******/ ])
