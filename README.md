@@ -18,9 +18,9 @@ You have two options to initialize your project:
 2. Clone this git repository (see below)
 
 ```bash
-$ cd ~/myProject
-$ git clone git@github.com:ryuran/jsBoiler.git .
-$ rm -rf .git
+cd ~/myProject
+git clone git@github.com:ryuran/jsBoiler.git .
+rm -rf .git
 ```
 
 

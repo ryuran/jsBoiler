@@ -21,8 +21,7 @@
     "subject_must_not_end_with_dot": true,
 
     "body_cannot_be_empty": true,
-    "body_must_include_verification_steps": true,
-    "body_must_include_screenshot": ["html", "css"]
+    "body_must_include_verification_steps": false
   },
   "issue": {
     "subject_cannot_be_empty": true,
@@ -36,5 +35,13 @@
     "body_must_include_reproduction_steps": ["bug"],
 
     "label_must_be_set": true
+  },
+  "branch": {
+    "name_must_be_longer_than": 4,
+    "name_must_be_shorter_than": 256,
+    "name_must_include_prefix": {
+        "prefixes": ["feature", "bugfix", "docs", "refactor"],
+        "require_after_prefix": "/"
+    }
   }
 }
