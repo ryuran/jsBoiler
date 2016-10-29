@@ -1,1 +1,4 @@
 node_modules
+
+# compiled from src/index.js
+index.js

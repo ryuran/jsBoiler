@@ -22,3 +22,11 @@ var library = require('library');
 
 library.foo();
 ```
+
+or with EcmaScript 6:
+```javascript
+// import ES6 Module
+import {foo} from 'library';
+
+foo();
+```
