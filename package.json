@@ -10,7 +10,7 @@
     "watch": "babel src/index.js --watch --out-file index.js",
     "tape": "babel-tape-runner test/**/*.js | tap-diff",
     "doc": "rm -rf docs/* && jsdoc src -d ./docs -R README.md -c jsdoc.conf.json -t ./node_modules/ink-docstrap/template",
-    "build": "npm run dist && npm run doc",
+    "postinstall": "npm run dist && npm run doc",
     "prepublish": "npm run dist"
   },
   "repository": {
@@ -33,7 +33,6 @@
     "babel-tape-runner": "2.0.1",
     "eslint": "3.8.1",
     "ink-docstrap": "1.3.0",
-    "jscs": "3.0.7",
     "jsdoc": "3.4.2",
     "tap-diff": "0.1.1",
     "tape": "4.6.2"
