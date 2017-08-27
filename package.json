@@ -2,6 +2,16 @@
   "name": "jsboiler",
   "version": "0.0.0",
   "description": "Js module boilerPlate",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryuran/jsBoiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryuran/jsBoiler/issues"
+  },
+  "homepage": "https://github.com/ryuran/jsBoiler#readme",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run tape",
@@ -13,16 +23,6 @@
     "postinstall": "npm run dist && npm run doc",
     "prepublish": "npm run dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryuran/jsBoiler.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ryuran/jsBoiler/issues"
-  },
-  "homepage": "https://github.com/ryuran/jsBoiler#readme",
   "devDependencies": {
     "babel-cli": "6.18.0",
     "babel-core": "6.18.0",
