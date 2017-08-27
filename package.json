@@ -20,8 +20,8 @@
     "watch": "babel src/index.js --watch --out-file index.js",
     "tape": "babel-tape-runner test/**/*.js | tap-diff",
     "doc": "rm -rf docs/* && jsdoc src -d ./docs -R README.md -c jsdoc.conf.json -t ./node_modules/ink-docstrap/template",
-    "postinstall": "npm run dist && npm run doc",
-    "prepublish": "npm run dist"
+    "build": "npm run dist && npm run doc",
+    "prepare": "npm run dist"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",
