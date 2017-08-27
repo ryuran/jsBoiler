@@ -1,4 +1,8 @@
+# node dependencies
 node_modules
 
 # compiled from src/index.js
 index.js
+
+# docs built for github-page
+docs

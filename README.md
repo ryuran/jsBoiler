@@ -5,10 +5,10 @@
 __jsBoiler__ is a boiler plate to make es2015 modules for browsers.
 
 It use:
- - [webpack](https://webpack.github.io) to build dist files.
- - [Babel](https://babeljs.io/) to transpile es2015 to native js for browsers.
+ - [Babel](https://babeljs.io/) to transpile es2015 to native js dist file for browsers.
  - [ESLint](https://github.com/eslint/eslint) is used for identifying and reporting on patterns, it will check recursively any `.js` file in `./src/`.
  - [Tape](https://github.com/substack/tape) is used for running tests located in `./test/`.
+
 
 ## Initialize your project
 
@@ -27,7 +27,24 @@ rm -rf .git
 ### Replace jsBoiler data by your own module’s informations
 
 #### Update your `package.json`
-Replace jsBoiler informations by yours: `name`, `description`, `keywords`,`licence`, `homepage`, `reposirory.url` and `bugs.url`.
+Replace jsBoiler informations by yours for this entries:
+```json
+{
+  "name": "jsboiler",
+  "version": "0.0.0",
+  "description": "Js module boilerPlate",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryuran/jsBoiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryuran/jsBoiler/issues"
+  },
+  "homepage": "https://github.com/ryuran/jsBoiler#readme"
+}
+```
 
 
 #### Choose a licence
@@ -44,6 +61,7 @@ rm README.md && mv README.dist.md README.md
 And write your plugin doc.
 
 NB: The `README.md` is used as jsDoc homepage.
+
 
 #### Start your code
 
